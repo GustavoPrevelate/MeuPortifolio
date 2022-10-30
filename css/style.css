@@ -56,7 +56,7 @@ footer{
         font-weight: 700;
     }
     .menu{
-        transform: translate(-10%, 30%);
+        transform: translate(-50%, 30%);
         gap: 32px;
         font-size: 1.25rem;
     }
