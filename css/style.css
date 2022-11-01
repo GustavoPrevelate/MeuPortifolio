@@ -24,6 +24,9 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+li.bars{
+    display: none;
+}
 main{
     grid-area: content;
     display: flex;
@@ -48,6 +51,7 @@ footer{
 @media (max-width: 960px){
     header{
         font-weight: 700;
+        background-color: #252525;
     }
     .profile{
         display: flex;
@@ -55,13 +59,35 @@ footer{
         font-size: 2.25rem;
         font-weight: 700;
     }
-    .menu{
-        transform: translate(-10%, 30%);
-        gap: 32px;
-        font-size: 1.25rem;
+    ul.menu{
+        display: none;
+    }
+    li.bars{
+        transform: translate(-80%, 0%);
+        font-size: 48px;
     }
     .logo{
         transform: translate(10%, 0%);
+    }
+    .home{
+        height: 1000px;
+    }
+    .profile__text{
+        font-size: 3.75rem;
+    }
+    .profile__name{
+        font-size: 4.25rem;
+        color: var(--primary-color);
+    }
+    #sobre-mim.sobre-mim{
+        height: 1200px;
+        grid-template-areas: 
+        "title title"
+        "description description"
+        "skills skills";
+        grid-template-rows: auto 0.5fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
     }
     .section-title{
         grid-area: title;
@@ -72,33 +98,35 @@ footer{
         -webkit-background-clip: text;
         color: transparent;
     }
-    h2.section-title{  
-        font-size: 120px;
+    h2.section-title{
+        font-size: 140px;
         text-align: center;
         gap: 32px
         
     }
     h3.description__title{
-        transform: translate(10%, -100%);
+        padding-left: 48px;
         font-size: 48px;
     }
     p.description__text{
-        transform: translate(10%, -20%);
-        font-size: 24px;
+        padding-left: 48px;
+        font-size: 30px;
     }
-    h3.skills__title{
-        transform: translate(-5%, -100%);
-        font-size: 48px;
+    div.description{
+        height: auto;
         
     }
+    h3.skills__title{
+        padding-left: 48px;
+        font-size: 48px;
+        height: 50px;
+    }
     ul.skills__icons{
-        transform: translate(-10%, -24%);
-        width: 75%;
-        height: 60%;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 16px;
+        width: 100%;
+        padding-right: 220px;
     }
     li.skills__icon i{
         font-size: 2.5rem;
@@ -107,36 +135,55 @@ footer{
         font-size: 1.75rem;
         font-weight: 700;
     }
+    .projetos{
+        height: 2700px;
+    }
     h2.section-projetos{
-        transform: translate(-0%, 0%);
-        font-size: 120px;
+        height: 700px;
+        font-size: 160px;
         text-align: center;
         gap: 32px
     }
     ul.card-container{
-        transform: translate(-0%, -5%);
+        
         width: -100%;
         height: 100%;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 32px;
     }
+    .card-container img{
+       width: 600px;
+    }
+    #contato.contato{
+        height: 800px;
+        grid-template-areas: 
+        "title title title"
+        "contatos contatos links"
+        "social social social";
+        grid-template-rows: auto 0.5fr;
+        
+    }
     h2.section-contato{
-        transform: translate(-0%, 40%);
-        font-size: 100px;
+        font-size: 180px;
         text-align: center;
         gap: 32px
     }
-    ul.social-container{
-        transform: translate(-40%, -300%);
+    li.social{
+        font-size: 50px;
+    }
+    ul.social-container{   
+        padding: 80px;
+        padding-left: 256px;
+
     }
     ul.contato__container{
-        transform: translate(20%, -0%);
+        padding-left: 48px;
         font-size: 24px;
-        
     }
     ul.links-container{
-        transform: translate(-80%, -0%);
+        padding-right: 48px;
         font-size: 24px;
     }
 }
