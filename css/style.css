@@ -361,7 +361,8 @@ footer{
         font-size: 48px;
     }
     footer{
-        font-size: 36px;
+        font-size: 20px;
         height: 120px;
+        font-weight: 400;
     }
 }
