@@ -1,56 +1,79 @@
 .contato{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1920px;
+    display: flex;
     display: grid;
     grid-template-areas: 
-        "title title title"
-        "contatos social links";
-    grid-template-rows: auto 1fr;
+        "title"
+        "subtitulo"
+        "rede_social";
+    grid-template-rows: auto 1fr 1fr 1fr;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: center;
+    padding-top: 50px;    
 }
 .section-contato{
     grid-area: title;
     font-size: 220px;
     text-align: center;
-    background-image: linear-gradient(#666, #000);
+    align-items: center;
+    justify-content: center; 
+    background-image: linear-gradient(120deg, #b700ff, #25B9F4 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
-.contato__container{
-    grid-area: contatos;
+
+.minhas_redes_sociais{
+    grid-area: subtitulo;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: var(--blue-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
-.contato__title{
-    font-size: 1.5rem;
-}
-.contato-item{
-    display: flex;
-    gap: 16px;
-}
+
 .social-container{
-    grid-area: social;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
-    font-size: 2.5rem;
+    
 }
-.social{
-    width: 64px;
-    height: 64px;
-    background-color: var(--icon-color);
-    display: grid;
-    place-content: center;  
-}
-.links-container{
-    grid-area: links;
+
+.div_github{
+    grid-area: rede_social;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    text-align: right;
+    height: 74px;
+    width: 74px;
+    background-color: var(--white-color);
+    border: 8px solid var(--white-color);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
-.links-title{
-    font-size: 1.5rem;
+
+.div_github:hover{
+    background-color: var(--white-color);
+    border: 8px solid var(--blue-color);
+}
+
+.div_linkedin{
+    grid-area: rede_social;
+    display: flex;
+    height: 74px;
+    width: 74px;
+    background-color: var(--white-color);
+    border: 8px solid var(--white-color);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_linkedin:hover{
+    background-color: var(--white-color);
+    border: 8px solid var(--blue-color);
 }

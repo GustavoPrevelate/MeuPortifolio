@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3cc9c6ad82.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,9 +13,19 @@
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/sobre-mim.css">
-    <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/habilidades.css">
     <link rel="stylesheet" href="./css/contato.css">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3cc9c6ad82.js" crossorigin="anonymous"></script>
+    
+    <link rel="shortcut icon" href="./img/computer.png" type="image/x-icon" />
+
     <title>Portifolio - Gustavo Prevelate</title>
+    
+    
+
 </head>
 <body>
     <header>
@@ -32,7 +41,7 @@
                     <a href="#sobre-mim">Sobre</a>
                 </li>
                 <li>
-                    <a href="#habilidades">Habilidade</a>
+                    <a href="#habilidades">Habilidades</a>
                 </li>
                 <li>
                     <a href="#contato">Contato</a>
@@ -46,7 +55,7 @@
     <main>
         <section class="home" id="home">
             <div class="profile">
-                <img class="profile__foto" src="./img/foto.png" alt="foto">
+                <img class="profile__foto" src="./img/minhaFoto.jpeg" alt="foto">
                 <div>
                     <span class="profile__text">Olá, eu me chamo</span>
                     <h1 class="profile__name">Gustavo Prevelate</h1>
@@ -61,7 +70,7 @@
             <h2 class="section-title">Sobre Mim</h2>
 
             
-            <div class="description">
+            <div class="description_sobre_mim">
 
                 <div class="div_minhas_habilidades">
                     <h3 class="titulo_minhas_habilidades">Habilidades</h3>
@@ -111,12 +120,11 @@
                 <h3 class="titulo_texto_sobre_mim">Deixe-me apresentar</h3>
                 <p class="description__text">
                     Eu sou um desenvolvedor
-                    <span class="description_front_end_web">Front-end Web</span>
-                    ,
+                    <span class="description_front_end_web">Front-end Web</span>,
                     <span class="description_front_end_mobile">Front-end Mobile</span>
                     e
-                    <span class="description_back_end">Back-end </span>
-                    , eu sou apaixonado por projetar, analisar, codificar e aprender. Atualmente estou fazendo faculdade na Estácio 
+                    <span class="description_back_end">Back-end</span>, 
+                    eu sou apaixonado por projetar, analisar, codificar e aprender. Atualmente estou fazendo faculdade na Estácio 
                     e curso no Senai sobre Análise e Desenvolvimento de Sistemas, além de novas tecnologias, eu aprendi a trabalhar em grupo,
                     ser uma pessoa mais flexivel, criativa e entender um projeto como todo, visando sempre atender as necessidades do mesmo.
                 </p>    
@@ -126,97 +134,65 @@
             
         </section>
         <section class="habilidades" id="habilidades">
-            <h2 class="section-projetos">
-                Projetos
+            <h2 class="titulo-projetos">
+                Habilidades
             </h2>
-            <div class="skills">
-                <h3 class="skills__title">Estou aprendendo</h3>
-
-                <div class="icones_aprendendo">
-                    <div class="icones_gerais_aprendendo">
-                        <img src="https://skillicons.dev/icons?i=firebase&theme=dark" />
+            <div class="description_aprendendo">
+                <div class="div_o_que_vou_aprender_texto">
+                    <h3 class="titulo_texto_o_que_vou_aprender"> O que busco aprender?</h3>
+                    <p class="texto_descricao_o_que_vou_aprender">
+                        Eu sempre busco aprender novas tecnologias para aprimorar o meu conhecimento, eu ainda quero aprender 
+                         sobre FireBase, NextJS, TypeScript, React, Vue, Regex, Python, PHP, C#, Flutter, PostgreSQL, 
+                        e diversas outras tecnologias.
+                    </p>    
+                </div> 
+                    
+                <div class="novas_skills">
+                    <h3 class="titulos_tecnologias_aprendendo">O que vou aprender</h3>
+    
+                    <div class="icones_aprendendo">
+                        <div class="icones_gerais_aprendendo">
+                            <img src="https://skillicons.dev/icons?i=firebase&theme=dark" width="80" height="80"/>
+                        </div>
+                        <div class="icones_gerais_aprendendo">
+                            <img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="80" height="80"/>
+                        </div>
+                        <div class="icones_gerais_aprendendo">
+                            <img src="https://skillicons.dev/icons?i=ts&theme=dark" width="80" height="80"/>
+                        </div>
+                        <div class="icones_gerais_aprendendo">
+                            <img src="https://skillicons.dev/icons?i=react&theme=dark" width="80" height="80"/>
+                        </div>
+                        <div class="icones_gerais_aprendendo">
+                            <img src="https://skillicons.dev/icons?i=vue&theme=dark" width="80" height="80"/>
+                        </div>
+                        <div class="icones_gerais_aprendendo">
+                            <img src="https://skillicons.dev/icons?i=regex&theme=dark" width="80" height="80"/>
+                        </div>
                     </div>
-                    <div class="icones_gerais_aprendendo">
-                        <img src="https://skillicons.dev/icons?i=nextjs&theme=dark" />
-                    </div>
-                    <div class="icones_gerais_aprendendo">
-                        <img src="https://skillicons.dev/icons?i=ts&theme=dark" />
-                    </div>
-                    <div class="icones_gerais_aprendendo">
-                        <img src="https://skillicons.dev/icons?i=vue&theme=dark" />
-                    </div>
-                    <div class="icones_gerais_aprendendo">
-                        <img src="https://skillicons.dev/icons?i=react&theme=dark" />
-                    </div>
-                    <div class="icones_gerais_aprendendo">
-                        <img src="https://skillicons.dev/icons?i=regex&theme=dark" />
-                    </div>
-                    <div class="icones_gerais_aprendendo">
-                        <img src="https://skillicons.dev/icons?i=planetscale&theme=dark" />
-                    </div>
+    
                 </div>
-
             </div>
+            
+            
         </section>
         <section class="contato" id="contato">
             <h2 class="section-contato">Contato</h2>
-            <ul class="contato__container">
-                <li>
-                    <h3 class="contato__title">Contato</h3>
-
-                </li>
-                <li>
-                    <div class="contato__item">
-                        <i class="fas fa-phone"></i>
-                        <span class="contato__item__text">(11) 97449-4479</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="contato__item">
-                        <i class="fas fa-envelope"></i>
-                        <span class="contato__item__text">guprevelate2022@gmail.com</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="contato__item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span class="contato__item__text">Rua Elton Silva, 905, Centro, Jandira</span>
-                    </div>
-                </li>
-            </ul>
-            <ul class="social-container">
-                <li class="social">
-                    <i class="fa-brands fa-instagram"></i>
-                </li>
-                <li class="social">
-                    <i class="fa-brands fa-youtube"></i>
-                </li>
-                <li class="social">
-                    <i class="fa-brands fa-twitter"></i>
-                </li>
-                <li class="social">
-                    <i class="fa-brands fa-linkedin"></i>
-                </li>
-            </ul>
-            <ul class="links-container">
-                <li>
-                    <h3 class="links-title">Links</h3>
-                </li>
-                <li>
-                    <a href="#home">Início</a>
-                </li>
-                <li>
-                    <a href="#sobre-mim">sobre-mim</a>
-                </li>
-                <li>
-                    <a href="#projetos">projetos</a>
-                </li>
-                <li>
-                    <a href="#contato">contato</a>
-                </li>
-            </ul>
+            <h3 class="minhas_redes_sociais">Redes Sociais</h3>
+            <div class="social-container">
+                <div class="div_github">
+                    <li class="rede_social_github">
+                        <a href="https://github.com/GustavoPrevelate"><img src="./img/icon_github.png"/></a>
+                    </li>
+                </div>
+                <div class="div_linkedin">
+                    <li class="rede_social_linkedin">
+                        <a href="https://www.linkedin.com/in/gustavo-prevelate-a7650224a/"><img src="./img/icon_linkedin.png"/></a>
+                    </li>
+                </div>                
+            </div>
         </section>
     </main>
-    <footer>Todos os direitos reservados  2022 | Desenvolvido por Gustavo Prevelate</footer>
+    <footer> © 2023 | Desenvolvido por Gustavo Prevelate</footer>
 </body>
 </html>

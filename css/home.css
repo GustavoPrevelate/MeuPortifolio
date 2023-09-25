@@ -3,23 +3,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/background.png);
+    background-color: var(--gray-color);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0px -40px 40px #000;
 }
 .profile{
     display: flex;
     align-items: center;
     gap: 48px;
 }
-.profile__foto{
-    filter: grayscale(100%);
-}
+
 .profile__text{
     font-size: 1.75rem;
 }
 .profile__name{
     font-size: 2.25rem;
     color: var(--blue-color);
+}
+
+.profile__foto{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
 }
